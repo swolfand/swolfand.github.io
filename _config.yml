@@ -13,30 +13,30 @@ sass:
   style: compressed
 
 # Site settings
-title: Lora
-description: "A free Jekyll theme"
-email: your-email@domain.com
+title: TnT
+description: "Just the Tip"
+email: sam.wolfand@gmail.com
 baseurl: "" # the subpath of your site, e.g. /blog/
 #url: "http://yourdomain.com"
-url: "http://nandomoreira.me/lora"
-repository: "https://github.com/nandomoreirame/lora"
-disqus_shortname: "fernandomoreira"
-google_analytics: UA-52446115-1
+url: ""
+repository: "https://github.com/swolfand/swolfand.github.io"
+disqus_shortname: ""
+google_analytics: 
 
 # social footer
 social:
   github:
     slug: github
-    link: http://github.com/nandomoreirame
+    link: http://github.com/swolfand
   facebook:
     slug: facebook
-    link: http://facebook.com/fernando.dev
+    link:
   twitter:
     slug: twitter
-    link: http://twitter.com/nandomoreirame
+    link: http://twitter.com/swolfand
   instagram:
     slug: instagram
-    link: http://instagram.com/nandomoreira.me
+    link: http://instagram.com/thewolf77
   linkedin:
     slug: linkedin
-    link: http://linkedin.com/in/nandomoreirame
+    link: http://linkedin.com/in/samwolfand
