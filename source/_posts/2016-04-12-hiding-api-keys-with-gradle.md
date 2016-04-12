@@ -54,7 +54,7 @@ EX:
 myApiKey = SOME_LONG_OBNOXIOUS_KEY
 ```
 
-3) In your app level `.gitignore` add the following:
+3) In your app level `.gitignore` add the following:  
 ```
 /build
 /myfile.properties
