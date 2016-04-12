@@ -63,8 +63,9 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll (~> 2.5.3)
+  jekyll-gist
   rake (~> 10.4.2)
   sass (~> 3.4.10)
 
 BUNDLED WITH
-   1.10.6
+   1.11.2

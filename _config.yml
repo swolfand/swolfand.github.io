@@ -21,7 +21,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: ""
 repository: "https://github.com/swolfand/swolfand.github.io"
 disqus_shortname: ""
-google_analytics: 
+google_analytics:
 
 # social footer
 social:
@@ -40,3 +40,6 @@ social:
   linkedin:
     slug: linkedin
     link: http://linkedin.com/in/samwolfand
+
+gems:
+  - jekyll-gist
