@@ -16,7 +16,7 @@ We all use API keys, I am a bit lazy and my projects are small so I try to keep 
 More often than not, I hardcode my API Key into my project, forget about it, then push that key to my github repo.
 This is bad practice for a number of reasons as such, this is how I started to prevent my API keys from getting committed to my github repo
 
-1) In the module level *__build.gradle__* file I put the following at the very top:
+1) In the module level `build.gradle` file I put the following at the very top:
 
 {% highlight groovy %}
 Properties props = new Properties()
@@ -30,7 +30,7 @@ if (propsFile.exists()) {
 }
 {% endhighlight %}
 
-in the same _build.gradle_ file, add the following to the android block:
+in the same `build.gradle` file, add the following to the android block:
 
 {% highlight groovy %}
 android {
@@ -56,9 +56,9 @@ myApiKey = SOME_LONG_OBNOXIOUS_KEY
 
 3) In your app level `.gitignore` add the following:  
 ```
-/build
+/build  
 /myfile.properties
 ```
 
 4) That's it! you can now use your API key anywhere in your android application as a `BuildConfig` variable
-by referencing it like so: `BuildConfig.MY_API_KEY`
+anywhere in your project like so: `BuildConfig.MY_API_KEY`
