@@ -5,10 +5,14 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <<<<<<< HEAD
+<<<<<<< HEAD
 <title> Keeping API Keys out of your github repo | TnT</title>
 =======
 <title> Keeping API Keys Secret | TnT</title>
 >>>>>>> 098476de75a84c64c85acaf78ca1c4b4f97e808a
+=======
+<title> Keeping API Keys Secret | TnT</title>
+>>>>>>> eb65a6aa5cfe80bd04fec6de52aa24f68207f55a
 <meta name="description" content="hiding-api-keys-with-gradle">
 <meta name="keywords" content="">
 <link rel="stylesheet" href="/css/main.css">
@@ -43,6 +47,7 @@ _gaq.push(['_trackPageview']);
         <li><a href="/feed.xml" target="_blank"><i class="icon icon-feed"></i> feed</a></li>
       </ul>
     </nav>
+<<<<<<< HEAD
     <a href="/" class="author-thumb">
       <img src="/images/author.jpg" alt="Author thumbnail" class="dot">
     </a>
@@ -60,13 +65,25 @@ _gaq.push(['_trackPageview']);
   <header class="post-header">
     <h1 class="post-title">Keeping API Keys Secret</h1>
 >>>>>>> 098476de75a84c64c85acaf78ca1c4b4f97e808a
+=======
+  </div>
+</header>
+        <section class="main-content">
+          <article class="post">
+  <header class="post-header">
+    <h1 class="post-title">Keeping API Keys Secret</h1>
+>>>>>>> eb65a6aa5cfe80bd04fec6de52aa24f68207f55a
     <p class="post-meta">Apr 12, 2016</p>
   </header>
   <div class="post-content">
     <p>We all use API keys, I am a bit lazy and my projects are small so I try to keep the effort minimal.
 More often than not, I hardcode my API Key into my project, forget about it, then push that key to my github repo.
 This is bad practice for a number of reasons as such, this is how I started to prevent my API keys from getting committed to my github repo</p>
+<<<<<<< HEAD
 <p>1) In the module level <code>build.gradle</code> file I put the following at the very top:</p>
+=======
+<p><strong>1)</strong> In the module level <code>build.gradle</code> file I put the following at the very top:</p>
+>>>>>>> eb65a6aa5cfe80bd04fec6de52aa24f68207f55a
 <div class="highlight"><pre><code class="language-groovy" data-lang="groovy"><span class="n">Properties</span> <span class="n">props</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Properties</span><span class="o">()</span>
 <span class="n">File</span> <span class="n">propsFile</span> <span class="o">=</span> <span class="n">file</span><span class="o">(</span><span class="s1">&#39;your_file_name.properties&#39;</span><span class="o">)</span>
 <span class="k">if</span> <span class="o">(</span><span class="n">propsFile</span><span class="o">.</span><span class="na">exists</span><span class="o">())</span> <span class="o">{</span>
@@ -86,18 +103,27 @@ This is bad practice for a number of reasons as such, this is how I started to p
        <span class="o">}</span>
     <span class="o">}</span>
 <span class="o">}</span></code></pre></div>
+<<<<<<< HEAD
 <p>2) in your <em>app</em> module add your properties file, and add the api key.
+=======
+<p><strong>2)</strong> in your <em>app</em> module add your properties file, and add the api key.
+>>>>>>> eb65a6aa5cfe80bd04fec6de52aa24f68207f55a
 <strong>NOTE: Your property name must match whatever you put in your build.gradle file</strong></p>
 <p>EX:</p>
 <p><code>
 # my_property_file.properties
 myApiKey = SOME_LONG_OBNOXIOUS_KEY
 </code></p>
+<<<<<<< HEAD
 <p>3) In your app level <code>.gitignore</code> add the following:<br />
+=======
+<p><strong>3)</strong> In your app level <code>.gitignore</code> add the following:<br />
+>>>>>>> eb65a6aa5cfe80bd04fec6de52aa24f68207f55a
 <code>
 /build  
 /myfile.properties
 </code></p>
+<<<<<<< HEAD
 <p>4) That’s it! you can now use your API key anywhere in your android application as a <code>BuildConfig</code> variable
 anywhere in your project like so: <code>BuildConfig.MY_API_KEY</code></p>
     <aside class="share">
@@ -107,6 +133,13 @@ anywhere in your project like so: <code>BuildConfig.MY_API_KEY</code></p>
 =======
       <a href="http://twitter.com/share?text=Keeping API Keys Secret&amp;url=/hiding-api-keys-with-gradle&amp;hashtags=web,dev,blog,soudev&amp;via=nandomoreirame"
 >>>>>>> 098476de75a84c64c85acaf78ca1c4b4f97e808a
+=======
+<p><strong>4)</strong> That’s it! you can now use your API key anywhere in your android application as a <code>BuildConfig</code> variable
+anywhere in your project like so: <code>BuildConfig.MY_API_KEY</code></p>
+    <aside class="share">
+      <span>Share this: </span>
+      <a href="http://twitter.com/share?text=Keeping API Keys Secret&amp;url=/hiding-api-keys-with-gradle&amp;hashtags=web,dev,blog,soudev&amp;via=nandomoreirame"
+>>>>>>> eb65a6aa5cfe80bd04fec6de52aa24f68207f55a
       onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
         <i class="icon icon-twitter-rounded"></i>
       </a>
@@ -124,10 +157,14 @@ anywhere in your project like so: <code>BuildConfig.MY_API_KEY</code></p>
       var disqus_shortname = '';
       var disqus_identifier = '/hiding-api-keys-with-gradle';
 <<<<<<< HEAD
+<<<<<<< HEAD
       var disqus_title = 'Keeping API Keys out of your github repo';
 =======
       var disqus_title = 'Keeping API Keys Secret';
 >>>>>>> 098476de75a84c64c85acaf78ca1c4b4f97e808a
+=======
+      var disqus_title = 'Keeping API Keys Secret';
+>>>>>>> eb65a6aa5cfe80bd04fec6de52aa24f68207f55a
       var disqus_url = '';
       /*var disqus_developer = 1;*/
       (function() {

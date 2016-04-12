@@ -14,6 +14,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <pubDate>Tue, 12 Apr 2016 14:20:05 -0700</pubDate>
     <lastBuildDate>Tue, 12 Apr 2016 14:20:05 -0700</lastBuildDate>
 =======
@@ -81,16 +82,27 @@
 =======
     <pubDate>Tue, 12 Apr 2016 15:02:38 -0700</pubDate>
     <lastBuildDate>Tue, 12 Apr 2016 15:02:38 -0700</lastBuildDate>
+=======
+    <pubDate>Tue, 12 Apr 2016 15:22:59 -0700</pubDate>
+    <lastBuildDate>Tue, 12 Apr 2016 15:22:59 -0700</lastBuildDate>
+>>>>>>> eb65a6aa5cfe80bd04fec6de52aa24f68207f55a
     <generator>Jekyll v2.5.3</generator>
     
       <item>
         <title>Keeping API Keys Secret</title>
+<<<<<<< HEAD
 >>>>>>> 098476de75a84c64c85acaf78ca1c4b4f97e808a
+=======
+>>>>>>> eb65a6aa5cfe80bd04fec6de52aa24f68207f55a
         <description>&lt;p&gt;We all use API keys, I am a bit lazy and my projects are small so I try to keep the effort minimal.
 More often than not, I hardcode my API Key into my project, forget about it, then push that key to my github repo.
 This is bad practice for a number of reasons as such, this is how I started to prevent my API keys from getting committed to my github repo&lt;/p&gt;
 
+<<<<<<< HEAD
 &lt;p&gt;1) In the module level &lt;code&gt;build.gradle&lt;/code&gt; file I put the following at the very top:&lt;/p&gt;
+=======
+&lt;p&gt;&lt;strong&gt;1)&lt;/strong&gt; In the module level &lt;code&gt;build.gradle&lt;/code&gt; file I put the following at the very top:&lt;/p&gt;
+>>>>>>> eb65a6aa5cfe80bd04fec6de52aa24f68207f55a
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-groovy&quot; data-lang=&quot;groovy&quot;&gt;&lt;span class=&quot;n&quot;&gt;Properties&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;props&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Properties&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;File&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;propsFile&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;your_file_name.properties&amp;#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
@@ -114,7 +126,11 @@ This is bad practice for a number of reasons as such, this is how I started to p
     &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
+<<<<<<< HEAD
 &lt;p&gt;2) in your &lt;em&gt;app&lt;/em&gt; module add your properties file, and add the api key.
+=======
+&lt;p&gt;&lt;strong&gt;2)&lt;/strong&gt; in your &lt;em&gt;app&lt;/em&gt; module add your properties file, and add the api key.
+>>>>>>> eb65a6aa5cfe80bd04fec6de52aa24f68207f55a
 &lt;strong&gt;NOTE: Your property name must match whatever you put in your build.gradle file&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;EX:&lt;/p&gt;
@@ -124,13 +140,21 @@ This is bad practice for a number of reasons as such, this is how I started to p
 myApiKey = SOME_LONG_OBNOXIOUS_KEY
 &lt;/code&gt;&lt;/p&gt;
 
+<<<<<<< HEAD
 &lt;p&gt;3) In your app level &lt;code&gt;.gitignore&lt;/code&gt; add the following:&lt;br /&gt;
+=======
+&lt;p&gt;&lt;strong&gt;3)&lt;/strong&gt; In your app level &lt;code&gt;.gitignore&lt;/code&gt; add the following:&lt;br /&gt;
+>>>>>>> eb65a6aa5cfe80bd04fec6de52aa24f68207f55a
 &lt;code&gt;
 /build  
 /myfile.properties
 &lt;/code&gt;&lt;/p&gt;
 
+<<<<<<< HEAD
 &lt;p&gt;4) That’s it! you can now use your API key anywhere in your android application as a &lt;code&gt;BuildConfig&lt;/code&gt; variable
+=======
+&lt;p&gt;&lt;strong&gt;4)&lt;/strong&gt; That’s it! you can now use your API key anywhere in your android application as a &lt;code&gt;BuildConfig&lt;/code&gt; variable
+>>>>>>> eb65a6aa5cfe80bd04fec6de52aa24f68207f55a
 anywhere in your project like so: &lt;code&gt;BuildConfig.MY_API_KEY&lt;/code&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 12 Apr 2016 07:39:59 -0700</pubDate>
@@ -144,9 +168,12 @@ anywhere in your project like so: &lt;code&gt;BuildConfig.MY_API_KEY&lt;/code&gt
         <category>API</category>
         
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 238ee05c08c07694452bbffe57b1ed41fe9907e0
 =======
 >>>>>>> 098476de75a84c64c85acaf78ca1c4b4f97e808a
+=======
+>>>>>>> eb65a6aa5cfe80bd04fec6de52aa24f68207f55a
         
       </item>
     
