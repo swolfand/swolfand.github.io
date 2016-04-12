@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Keeping API Keys out of your github repo"
+title: "Keeping API Keys Secret"
 permalink: hiding-api-keys-with-gradle
 date: 2016-04-12 14:39:59
 comments: true
