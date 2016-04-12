@@ -19,5 +19,6 @@ datastore that comes baked into Android [^1].
 
 The issue is one of multiple inheritance. a standard RecyclerView adapter definition looks like:
 
-{% gist parkr/c08ee0f2726fd0e3909d test.md %}
-[^1]: <small> I know what you're going to say: "Don't use SQLite! Use ----", where ---- is one of a </small> number of options. This post isn't for you </small>
+{% gist swolfand/e9814d654fc536641e6c64a4ff480941 %}
+
+[^1]: <small> I know what you're going to say: "Don't use SQLite! Use ----", where ---- is one of a number of options. This post isn't for you </small>
