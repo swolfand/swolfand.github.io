@@ -15,6 +15,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <pubDate>Tue, 12 Apr 2016 14:20:05 -0700</pubDate>
     <lastBuildDate>Tue, 12 Apr 2016 14:20:05 -0700</lastBuildDate>
 =======
@@ -94,15 +95,69 @@
 >>>>>>> 098476de75a84c64c85acaf78ca1c4b4f97e808a
 =======
 >>>>>>> eb65a6aa5cfe80bd04fec6de52aa24f68207f55a
+=======
+    <pubDate>Tue, 12 Apr 2016 16:01:21 -0700</pubDate>
+    <lastBuildDate>Tue, 12 Apr 2016 16:01:21 -0700</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Cursors &amp; RecyclerViews, Smurf Yeah!</title>
+        <description>&lt;p&gt;Every time I start a new Android project I know for a fact that there will be
+some sort of content provider/resolver laden snake pit that I will inevitably fall
+into. Most recently it was trying to get RecyclerViews to play nicely with Cursors.
+Cursors, of course are what gets returned by a content resolver when it queries the SQLite
+datastore that comes baked into Android &lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;The issue is one of multiple inheritance. a standard RecyclerView adapter definition looks like:&lt;/p&gt;
+
+&lt;noscript&gt;&lt;pre&gt;## Test
+
+This is a test gist.&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/parkr/c08ee0f2726fd0e3909d.js?file=test.md&quot;&gt; &lt;/script&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;&lt;small&gt; I know what you’re going to say: “Don’t use SQLite! Use —-“, where —- is one of a &lt;/small&gt; number of options. This post isn’t for you &amp;lt;/small&amp;gt; &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Tue, 12 Apr 2016 08:26:27 -0700</pubDate>
+        <link>/using-cursors-with-recycler-views</link>
+        <guid isPermaLink="true">/using-cursors-with-recycler-views</guid>
+        
+        <category>android</category>
+        
+        <category>recyclerview</category>
+        
+        <category>cursors</category>
+        
+        <category>adapter</category>
+        
+        <category>content</category>
+        
+        <category>provider</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Keeping API Keys Secret</title>
+>>>>>>> 03b9ea92447d904fa93e04d1abab6916eec389f7
         <description>&lt;p&gt;We all use API keys, I am a bit lazy and my projects are small so I try to keep the effort minimal.
 More often than not, I hardcode my API Key into my project, forget about it, then push that key to my github repo.
 This is bad practice for a number of reasons as such, this is how I started to prevent my API keys from getting committed to my github repo&lt;/p&gt;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 &lt;p&gt;1) In the module level &lt;code&gt;build.gradle&lt;/code&gt; file I put the following at the very top:&lt;/p&gt;
 =======
 &lt;p&gt;&lt;strong&gt;1)&lt;/strong&gt; In the module level &lt;code&gt;build.gradle&lt;/code&gt; file I put the following at the very top:&lt;/p&gt;
 >>>>>>> eb65a6aa5cfe80bd04fec6de52aa24f68207f55a
+=======
+&lt;p&gt;&lt;strong&gt;1)&lt;/strong&gt; In the module level &lt;code&gt;build.gradle&lt;/code&gt; file I put the following at the very top:&lt;/p&gt;
+>>>>>>> 03b9ea92447d904fa93e04d1abab6916eec389f7
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-groovy&quot; data-lang=&quot;groovy&quot;&gt;&lt;span class=&quot;n&quot;&gt;Properties&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;props&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Properties&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;File&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;propsFile&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;your_file_name.properties&amp;#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
@@ -127,10 +182,14 @@ This is bad practice for a number of reasons as such, this is how I started to p
 &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 &lt;p&gt;2) in your &lt;em&gt;app&lt;/em&gt; module add your properties file, and add the api key.
 =======
 &lt;p&gt;&lt;strong&gt;2)&lt;/strong&gt; in your &lt;em&gt;app&lt;/em&gt; module add your properties file, and add the api key.
 >>>>>>> eb65a6aa5cfe80bd04fec6de52aa24f68207f55a
+=======
+&lt;p&gt;&lt;strong&gt;2)&lt;/strong&gt; in your &lt;em&gt;app&lt;/em&gt; module add your properties file, and add the api key.
+>>>>>>> 03b9ea92447d904fa93e04d1abab6916eec389f7
 &lt;strong&gt;NOTE: Your property name must match whatever you put in your build.gradle file&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;EX:&lt;/p&gt;
@@ -141,20 +200,28 @@ myApiKey = SOME_LONG_OBNOXIOUS_KEY
 &lt;/code&gt;&lt;/p&gt;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 &lt;p&gt;3) In your app level &lt;code&gt;.gitignore&lt;/code&gt; add the following:&lt;br /&gt;
 =======
 &lt;p&gt;&lt;strong&gt;3)&lt;/strong&gt; In your app level &lt;code&gt;.gitignore&lt;/code&gt; add the following:&lt;br /&gt;
 >>>>>>> eb65a6aa5cfe80bd04fec6de52aa24f68207f55a
+=======
+&lt;p&gt;&lt;strong&gt;3)&lt;/strong&gt; In your app level &lt;code&gt;.gitignore&lt;/code&gt; add the following:&lt;br /&gt;
+>>>>>>> 03b9ea92447d904fa93e04d1abab6916eec389f7
 &lt;code&gt;
 /build  
 /myfile.properties
 &lt;/code&gt;&lt;/p&gt;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 &lt;p&gt;4) That’s it! you can now use your API key anywhere in your android application as a &lt;code&gt;BuildConfig&lt;/code&gt; variable
 =======
 &lt;p&gt;&lt;strong&gt;4)&lt;/strong&gt; That’s it! you can now use your API key anywhere in your android application as a &lt;code&gt;BuildConfig&lt;/code&gt; variable
 >>>>>>> eb65a6aa5cfe80bd04fec6de52aa24f68207f55a
+=======
+&lt;p&gt;&lt;strong&gt;4)&lt;/strong&gt; That’s it! you can now use your API key anywhere in your android application as a &lt;code&gt;BuildConfig&lt;/code&gt; variable
+>>>>>>> 03b9ea92447d904fa93e04d1abab6916eec389f7
 anywhere in your project like so: &lt;code&gt;BuildConfig.MY_API_KEY&lt;/code&gt;&lt;/p&gt;
 </description>
         <pubDate>Tue, 12 Apr 2016 07:39:59 -0700</pubDate>
@@ -169,11 +236,14 @@ anywhere in your project like so: &lt;code&gt;BuildConfig.MY_API_KEY&lt;/code&gt
         
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 238ee05c08c07694452bbffe57b1ed41fe9907e0
 =======
 >>>>>>> 098476de75a84c64c85acaf78ca1c4b4f97e808a
 =======
 >>>>>>> eb65a6aa5cfe80bd04fec6de52aa24f68207f55a
+=======
+>>>>>>> 03b9ea92447d904fa93e04d1abab6916eec389f7
         
       </item>
     

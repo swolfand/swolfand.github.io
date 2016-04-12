@@ -4,14 +4,14 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title> About | TnT</title>
-<meta name="description" content="">
+<title> Cursors &amp; RecyclerViews, Smurf Yeah! | TnT</title>
+<meta name="description" content="using-cursors-with-recycler-views">
 <meta name="keywords" content="">
 <link rel="stylesheet" href="/css/main.css">
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
 <meta name="theme-color" content="#2ecc71">
-<link rel="canonical" href="/about/">
+<link rel="canonical" href="/using-cursors-with-recycler-views">
 <link rel="alternate" type="application/rss+xml" title="TnT" href="/feed.xml" />
 <script type="text/javascript">
 var _gaq = _gaq || [];
@@ -26,7 +26,7 @@ _gaq.push(['_trackPageview']);
     <meta name="robots" content="noindex"> <!--=====  Please remove it ! ! !  ======-->
     <meta name="googlebot" content="noindex"> <!--=====  Please remove it ! ! !  ======-->
   </head>
-  <body class="page">
+  <body class="single">
     <main class="container">
         <header class="site-header">
   <div class="container txt-center">
@@ -39,24 +39,63 @@ _gaq.push(['_trackPageview']);
         <li><a href="/feed.xml" target="_blank"><i class="icon icon-feed"></i> feed</a></li>
       </ul>
     </nav>
-    <a href="/" class="author-thumb">
-      <img src="/images/author.jpg" alt="Author thumbnail" class="dot">
-    </a>
-    <h1>Sam Wolfand<small> Android Dev | Cactus Lover | Man Child </small></h1>
-    <hr class="hr">
   </div>
 </header>
         <section class="main-content">
           <article class="post">
   <header class="post-header">
-    <h1 class="post-title">About</h1>
-    <p class="post-meta"></p>
+    <h1 class="post-title">Cursors & RecyclerViews, Smurf Yeah!</h1>
+    <p class="post-meta">Apr 12, 2016</p>
   </header>
   <div class="post-content">
-    <p>This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at <a href="http://jekyllrb.com/">jekyllrb.com</a></p>
-<p>You can find the source code for the Jekyll new theme at: <a href="https://github.com/jglovier/jekyll-new">github.com/jglovier/jekyll-new</a></p>
-<p>You can find the source code for Jekyll at <a href="https://github.com/jekyll/jekyll">github.com/jekyll/jekyll</a></p>
+    <p>Every time I start a new Android project I know for a fact that there will be
+some sort of content provider/resolver laden snake pit that I will inevitably fall
+into. Most recently it was trying to get RecyclerViews to play nicely with Cursors.
+Cursors, of course are what gets returned by a content resolver when it queries the SQLite
+datastore that comes baked into Android <sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>.</p>
+<p>The issue is one of multiple inheritance. a standard RecyclerView adapter definition looks like:</p>
+<noscript><pre>## Test
+This is a test gist.</pre></noscript>
+<script src="https://gist.github.com/parkr/c08ee0f2726fd0e3909d.js?file=test.md"> </script>
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p><small> I know what you’re going to say: “Don’t use SQLite! Use —-“, where —- is one of a </small> number of options. This post isn’t for you &lt;/small&gt; <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+    <aside class="share">
+      <span>Share this: </span>
+      <a href="http://twitter.com/share?text=Cursors & RecyclerViews, Smurf Yeah!&amp;url=/using-cursors-with-recycler-views&amp;hashtags=web,dev,blog,soudev&amp;via=nandomoreirame"
+      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+        <i class="icon icon-twitter-rounded"></i>
+      </a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=/using-cursors-with-recycler-views"
+      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+        <i class="icon icon-facebook-rounded"></i>
+      </a>
+    </aside>
   </div>
+  <hr>
+  <aside id="comments" class="disqus">
+    <h3>Comments</h3>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      var disqus_shortname = '';
+      var disqus_identifier = '/using-cursors-with-recycler-views';
+      var disqus_title = 'Cursors & RecyclerViews, Smurf Yeah!';
+      var disqus_url = '';
+      /*var disqus_developer = 1;*/
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+    <noscript>
+      Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+    </noscript>
+  </aside>
 </article>
         </section>
 <div class="clearfix"></div>
