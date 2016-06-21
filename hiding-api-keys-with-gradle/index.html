@@ -8,6 +8,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <title> Keeping API Keys out of your github repo | TnT</title>
 =======
 <title> Keeping API Keys Secret | TnT</title>
@@ -21,6 +22,9 @@
 =======
 <title> Keeping API Keys Secret | TnT</title>
 >>>>>>> 085fd2052ea088f15bfd5dc602a103ed413cad3f
+=======
+<title> Keeping API Keys Secret | TnT</title>
+>>>>>>> bbb53cb98354a222acf8f6a74a1f44c80258561f
 <meta name="description" content="hiding-api-keys-with-gradle">
 <meta name="keywords" content="">
 <link rel="stylesheet" href="/css/main.css">
@@ -55,6 +59,7 @@ _gaq.push(['_trackPageview']);
         <li><a href="/feed.xml" target="_blank"><i class="icon icon-feed"></i> feed</a></li>
       </ul>
     </nav>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -96,12 +101,21 @@ _gaq.push(['_trackPageview']);
 >>>>>>> 03b9ea92447d904fa93e04d1abab6916eec389f7
 =======
 >>>>>>> 085fd2052ea088f15bfd5dc602a103ed413cad3f
+=======
+  </div>
+</header>
+        <section class="main-content">
+          <article class="post">
+  <header class="post-header">
+    <h1 class="post-title">Keeping API Keys Secret</h1>
+>>>>>>> bbb53cb98354a222acf8f6a74a1f44c80258561f
     <p class="post-meta">Apr 12, 2016</p>
   </header>
   <div class="post-content">
     <p>We all use API keys, I am a bit lazy and my projects are small so I try to keep the effort minimal.
 More often than not, I hardcode my API Key into my project, forget about it, then push that key to my github repo.
 This is bad practice for a number of reasons as such, this is how I started to prevent my API keys from getting committed to my github repo</p>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -115,6 +129,9 @@ This is bad practice for a number of reasons as such, this is how I started to p
 =======
 <p><strong>1)</strong> In the module level <code>build.gradle</code> file I put the following at the very top:</p>
 >>>>>>> 085fd2052ea088f15bfd5dc602a103ed413cad3f
+=======
+<p><strong>1)</strong> In the module level <code>build.gradle</code> file I put the following at the very top:</p>
+>>>>>>> bbb53cb98354a222acf8f6a74a1f44c80258561f
 <div class="highlight"><pre><code class="language-groovy" data-lang="groovy"><span class="n">Properties</span> <span class="n">props</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Properties</span><span class="o">()</span>
 <span class="n">File</span> <span class="n">propsFile</span> <span class="o">=</span> <span class="n">file</span><span class="o">(</span><span class="s1">&#39;your_file_name.properties&#39;</span><span class="o">)</span>
 <span class="k">if</span> <span class="o">(</span><span class="n">propsFile</span><span class="o">.</span><span class="na">exists</span><span class="o">())</span> <span class="o">{</span>
@@ -137,6 +154,7 @@ This is bad practice for a number of reasons as such, this is how I started to p
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <p>2) in your <em>app</em> module add your properties file, and add the api key.
 =======
 <p><strong>2)</strong> in your <em>app</em> module add your properties file, and add the api key.
@@ -147,12 +165,16 @@ This is bad practice for a number of reasons as such, this is how I started to p
 =======
 <p><strong>2)</strong> in your <em>app</em> module add your properties file, and add the api key.
 >>>>>>> 085fd2052ea088f15bfd5dc602a103ed413cad3f
+=======
+<p><strong>2)</strong> in your <em>app</em> module add your properties file, and add the api key.
+>>>>>>> bbb53cb98354a222acf8f6a74a1f44c80258561f
 <strong>NOTE: Your property name must match whatever you put in your build.gradle file</strong></p>
 <p>EX:</p>
 <p><code>
 # my_property_file.properties
 myApiKey = SOME_LONG_OBNOXIOUS_KEY
 </code></p>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -166,10 +188,14 @@ myApiKey = SOME_LONG_OBNOXIOUS_KEY
 =======
 <p><strong>3)</strong> In your app level <code>.gitignore</code> add the following:<br />
 >>>>>>> 085fd2052ea088f15bfd5dc602a103ed413cad3f
+=======
+<p><strong>3)</strong> In your app level <code>.gitignore</code> add the following:<br />
+>>>>>>> bbb53cb98354a222acf8f6a74a1f44c80258561f
 <code>
 /build  
 /myfile.properties
 </code></p>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -187,6 +213,8 @@ anywhere in your project like so: <code>BuildConfig.MY_API_KEY</code></p>
 >>>>>>> 03b9ea92447d904fa93e04d1abab6916eec389f7
 =======
 >>>>>>> 085fd2052ea088f15bfd5dc602a103ed413cad3f
+=======
+>>>>>>> bbb53cb98354a222acf8f6a74a1f44c80258561f
 <p><strong>4)</strong> That’s it! you can now use your API key anywhere in your android application as a <code>BuildConfig</code> variable
 anywhere in your project like so: <code>BuildConfig.MY_API_KEY</code></p>
     <aside class="share">
@@ -194,11 +222,14 @@ anywhere in your project like so: <code>BuildConfig.MY_API_KEY</code></p>
       <a href="http://twitter.com/share?text=Keeping API Keys Secret&amp;url=/hiding-api-keys-with-gradle&amp;hashtags=web,dev,blog,soudev&amp;via=nandomoreirame"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> eb65a6aa5cfe80bd04fec6de52aa24f68207f55a
 =======
 >>>>>>> 03b9ea92447d904fa93e04d1abab6916eec389f7
 =======
 >>>>>>> 085fd2052ea088f15bfd5dc602a103ed413cad3f
+=======
+>>>>>>> bbb53cb98354a222acf8f6a74a1f44c80258561f
       onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
         <i class="icon icon-twitter-rounded"></i>
       </a>
@@ -219,6 +250,7 @@ anywhere in your project like so: <code>BuildConfig.MY_API_KEY</code></p>
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       var disqus_title = 'Keeping API Keys out of your github repo';
 =======
       var disqus_title = 'Keeping API Keys Secret';
@@ -232,6 +264,9 @@ anywhere in your project like so: <code>BuildConfig.MY_API_KEY</code></p>
 =======
       var disqus_title = 'Keeping API Keys Secret';
 >>>>>>> 085fd2052ea088f15bfd5dc602a103ed413cad3f
+=======
+      var disqus_title = 'Keeping API Keys Secret';
+>>>>>>> bbb53cb98354a222acf8f6a74a1f44c80258561f
       var disqus_url = '';
       /*var disqus_developer = 1;*/
       (function() {
